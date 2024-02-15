@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TOP MUSIC VIDEOS</title>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Untitled (4).png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    <script type="text/javascript" src="assets/js/video.js"></script>
+    <link rel="stylesheet" href="assets/css/videos.css">
+</head>
+<!-- Codio Tube page created by Jon, he also used the youtube API and made an actual CodioTube youtube page -->
+<!-- Added a nav bar so that we can beef up the page with more content -->
+
+<body>
+    <div class="hero">
+        <div class="container">
+            <div class="header">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="https://melaniemartinezmusic.com">
+                            <img src="images/Untitled (6).png" width="50" height="50">
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item" href="index.html">
+                                Home
+                            </a>
+
+                            <a class="navbar-item" href="about.html">
+                                About 
+                            </a>
+
+                            <a class="navbar-item" href="quiz.html">
+                                 Fan Quiz
+                            </a>
+
+                            <a class="navbar-item" href="headphones.html">
+                                Headphones
+                            </a>
+
+                            <a class="navbar-item" href="shirt.html">
+                                T-Shirts
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <h1 class="title is-1 is-danger">Melanie's Music Videos</h1>
+
+            <form id="search-form">
+                <input type="text" id="query">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <div id="search-results"></div>
+
+
+
+
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hCnS7qJi_bQ?si=f9rRjAqsuJnhVsGS"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+            <br>
+            <br>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yI2vN0CCcvg?si=pwq03wnfeysyPeRR"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br>
+            <br>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LIoCBKECxQo?si=MMnD3G7JhbuBlt4K"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br>
+            <br>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KSMZ9-85qfc?si=eL0NkrjrGfaYCjvL"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br>
+            <br>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/j0QRZMBuh4s?si=-ZxM-DgHCHwvcR9F"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br>
+            <br>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/L9D85CgkIM8?si=oryIcMu0Ya6bT1Cv"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br>
+            <br>
+            <br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9BXQLcnG1oY?si=vkRy6pDAL5JtT_4O"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+            <br>
+            <br>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DVAzEN5nsew?si=FyR9OLi-I1yWycgA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            $(function () {
+                $('#search-form').submit(function (event) { // User clicks
+                    event.preventDefault();
+                    var searchTerm = $('#query').val();
+                    getRequest(searchTerm);
+                });
+            });
+
+            function getRequest(searchTerm) {
+                var userQuery = searchTerm;
+                var params = {
+                    part: 'snippet',
+                    key: 'AIzaSyBiEm_SxOMIcd3TDEFXDHqg26UBoeCWYyM',
+                    q: userQuery,
+                    maxResults: 4
+                };
+                url = 'https://youtube.googleapis.com/youtube/v3/search'
+
+                $.getJSON(url, params, function (data) {
+                    showResults(data.items);
+                });
+            }
+            function showResults(results) { //Shows Results
+                var html = "";
+                $.each(results, function (index, items) {
+
+                    html += '<a href=' + "https://www.youtube.com/watch?v=" + items.id.videoId + '>';
+                    html += '<img src=' + items.snippet.thumbnails.default.url + '>';
+                    html += '</a>';
+
+                    console.log(items.id.videoId);
+                });
+                $('#search-results').html(html);
+            }
+        });
+
+    </script>
+</body>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+       
+          <strong>MELANIE'S MERCH.</strong> By:JTS<a></a>
+     
+
+    </div>
+</footer>
+
+</html>
