@@ -174,11 +174,11 @@ loadScore();
 var questionArray = [
   {
     question: "What was Melanie Martinez's first song in the Crybaby album?",
-    selection: ["<Highschool Sweet Heart>", "<Spiderweb>", "<Crybaby>", "<Mad Hatter>"],
-    answer: "<Crybaby>",
+    selection: ["Highschool Sweet Heart", "Spiderweb", "Crybaby", "Mad Hatter"],
+    answer: "Crybaby",
   },
   {
-    question: "What was Melanie matirnez's forth album?",
+    question: "What was Melanie Martinez's forth album?",
     selection: ["Crybaby", "K-12", "After School", "Portals"],
     answer: "After School",
   },

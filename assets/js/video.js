@@ -1,3 +1,8 @@
+/*
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 fetch(
   "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCb3BgkDN-QVBc-HoW7XdPbA&maxResults=5&order=date&key=AIzaSyDwuWzHnd40oj3HKj8ITCFZjMa5J125JiU"
 )
@@ -6,15 +11,14 @@ fetch(
   })
   .then((data) => {
     console.log(data);
-    let video = data.items;
+    let videos = data.items;
     let videoContainer = document.querySelector(".youtube-container");
-    for (video of video) {
+    for (videos of videos) {
       videoContainer.innerHTML += `
-            <img src="${video.snippet.thumbnails.medium.url}"/>
+            <img src="${videos.snippet.thumbnails.medium.url}"/>
             `;
     }
-  });
-(function ($) {
+  })(function ($) {
   var $window = $(window),
     $body = $("body");
 
