@@ -17,9 +17,7 @@
 }
 #search-results {
     text-align: center;
-    height: fit-content;
-    width: fit-content;
-    display: grid;
+  
 }
 
 
@@ -41,7 +39,10 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+   
+}
+    
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2075,6 +2076,7 @@ input, select, textarea {
 	form {
 		margin: 0 0 2em 0;
 		overflow-x: hidden;
+        width: 500px;
 	}
 
 		form > :last-child {
@@ -2104,7 +2106,7 @@ input, select, textarea {
 				-ms-flex-shrink: 0;
 				flex-shrink: 0;
 				padding: 1.5em 0 0 1.5em;
-				width: calc(100% - 1.5em);
+				
 			}
 
 				form > .fields > .field.half {
@@ -2478,15 +2480,15 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 4px;
 		border: 0;
-		box-shadow: inset 0 0 0 2px #f40594;
-		color: #060505 !important;
+		box-shadow: inset 0 0 0 2px #197f10;
+		color: #f5f1f1 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
 		font-weight: 900;
 		height: 3.5em;
 		letter-spacing: 0.35em;
-		line-height: 3.45em;
+		line-height: 1.45em;
 		overflow: hidden;
 		padding: 0 1.25em 0 1.6em;
 		text-align: center;
@@ -2517,8 +2519,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			color: #f2849e !important;
-			box-shadow: inset 0 0 0 2px #f2849e;
+			color: #84f298 !important;
+			box-shadow: inset 0 0 0 2px #26ba21;
 		}
 
 		input[type="submit"]:active,
@@ -2526,7 +2528,7 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(242, 132, 158, 0.1);
+			background-color: rgba(245, 249, 246, 0.1);
 		}
 
 		input[type="submit"].small,
@@ -2551,7 +2553,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			box-shadow: none;
-			background-color: #585858;
+			background-color: #b6f8bc;
 			color: #ffffff !important;
 		}
 
@@ -3018,8 +3020,8 @@ input, select, textarea {
 		max-width: 80%;
 		height: 100%;
 		-webkit-overflow-scrolling: touch;
-		background: #585858;
-		color: #ffffff;
+		background: #0c0a0a;
+		color: #05f319;
 		cursor: default;
 		visibility: hidden;
 		z-index: 10002;
@@ -3620,8 +3622,8 @@ body.is-preload .tiles article {
 		height: 100%;
         font-weight: 700;
 		-webkit-overflow-scrolling: touch;
-		background: #585858;
-		color: #ffffff;
+		background: #040404;
+		color: #13f726;
 		cursor: default;
 		visibility: hidden;
 		z-index: 10002;
@@ -3786,7 +3788,7 @@ body.is-preload .tiles article {
 
 	#main {
 		padding: 0em 0 6em 0 ;
-
+    }
 		@media screen and (max-width: 736px) {
 
 			#main {
@@ -3794,7 +3796,7 @@ body.is-preload .tiles article {
 			}
 
 		}
-    }
+    
 /* Footer */
 
 	#footer {
