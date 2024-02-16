@@ -36,73 +36,73 @@ loadScore();
 /* Questions Array */
 var questionArray = [
   {
-    question: "Inside which HTML element do we put the JavaScript?",
-    selection: ["<javascript>", "<scripting>", "<script>", "<js>"],
-    answer: "<script>",
+    question: "What was Melanie Martinez's first song in the Crybaby album?",
+    selection: ["<Highschool Sweet Heart>", "<Spiderweb>", "<Crybaby>", "<Mad Hatter>"],
+    answer: "<Crybaby>",
   },
   {
-    question: "Commonly used data types DO NOT include:",
-    selection: ["strings", "booleans", "alerts", "numbers"],
-    answer: "alerts",
-  },
-  {
-    question:
-      "The condition in an if / else statement is enclosed within ____.",
-    selection: ["quotes", "curly brackets", "parentheses", "square brackets"],
-    answer: "parentheses",
-  },
-  {
-    question: "Arrays in Javascript can be used to store ____.",
-    selection: [
-      "numbers and strings",
-      "other arrays",
-      "booleans",
-      "all of the above",
-    ],
-    answer: "all of the above",
-  },
-  {
-    question: "Which method returns the character at the specified index?",
-    selection: [
-      "charAt()",
-      "getCharAt()",
-      "characterAt()",
-      "None of the Above",
-    ],
-    answer: "charAt()",
-  },
-  {
-    question: "Which of the following is not a mouse event?",
-    selection: ["onmousemove", "onmouseover", "onclick", "onmousescroller"],
-    answer: "onmousescroller",
-  },
-  {
-    question: "The 'function' and 'var' are known as:",
-    selection: [
-      "Keywords",
-      "Declaration Statements",
-      "Data Types",
-      "Prototypes",
-    ],
-    answer: "Declaration Statements",
+    question: "What was Melanie matirnez's forth album?",
+    selection: ["Crybaby", "K-12", "After School", "Portals"],
+    answer: "After School",
   },
   {
     question:
-      "A very useful tool for used during development and debugging for printing content to the debugger is:",
-    selection: ["Javascript", "terminal / bash", "for loops", "console log"],
-    answer: "console log",
+      "Which album has the song Teachers Pet?",
+    selection: ["K-12", "Crybaby", "Portals", "After School"],
+    answer: "K-12",
+  },
+  {
+    question: "In was album does Melanie Martinez become a fariy?",
+    selection: [
+      "Crybaby",
+      "K-12",
+      "After School",
+      "Portals",
+    ],
+    answer: "Portals",
+  },
+  {
+    question: "What song is in the After School album?",
+    selection: [
+      "The Bakery",
+      "Glued",
+      "Test Me",
+      "All the Above",
+    ],
+    answer: "All the Above",
+  },
+  {
+    question: "Which song is not in the Portals album?",
+    selection: ["Death", "Void", "Notebook", "Fairee Soiree"],
+    answer: "Notebook",
+  },
+  {
+    question: "Milk and Cookie is in the ______ album?",
+    selection: [
+      "After School",
+      "K-12",
+      "Portlals",
+      "Crybaby",
+    ],
+    answer: "Crybaby",
   },
   {
     question:
-      "Choose the correct snipped from the following to check if the variable 'a' is not equal to 'NULL':",
-    selection: ["if (a!)", "if(a!null)", "if(a!==null)", "if(a!=null)"],
+      "What song is not in the K-12 album?",
+    selection: ["Wheels on the bus", "Light Shower", "Detention", "Lunchbox Friends"],
+    answer: "Light Shower",
+  },
+  {
+    question:
+      "Which song is not by Melanie Martinez?",
+    selection: ["Angry Too", "Nurse's Office", "Numbers", "The Bakery"],
     answer: "if(a!==null)",
   },
   {
     question:
-      "Among the following, which one is a ternary operator in JavaScript?",
-    selection: ["#", "::", "&:", "?:"],
-    answer: "?:",
+      "Which songs are in the Crybaby album?",
+    selection: ["Womb", "Numbers", "Highschool Sweet Heart", "None of the above"],
+    answer: "None of the above",
   },
 ];
 /* Fin Qand A */
