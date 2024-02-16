@@ -63,7 +63,7 @@
 }
 
 .btn:hover {
-  background: #d8c21a;
+  background: #c808ef;
 }
 
 #highscore-button {
@@ -77,7 +77,7 @@
 #question {
   color: #e3a2f7;
   font-size: 1.5rem;
-  text-shadow: 0.25px 0.25px rgb(125, 214, 244);
+  text-shadow: 0.25px 0.25px rgb(9, 10, 10);
 
 }
 
@@ -96,8 +96,8 @@
 }
 
 .answer:hover {
-  background: #f5f3f3;
-  color: rgb(145, 214, 247);
+  background: #df07f7;
+  color: rgb(4, 5, 5);
 }
 
 #check-answer-correct {
@@ -133,7 +133,7 @@
 
 #high-score h1 {
   color: #090909;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-shadow: 0.75px 0.75px rgb(176, 94, 94);
   
 }
@@ -141,6 +141,7 @@
 #scoreBoard {
   color: #070808;
   font-size: large;
+  font-weight: bold;
 }
 
 #form {
@@ -244,6 +245,7 @@ body {
 					#header nav ul li a[href="#menu"] {
 						-webkit-tap-highlight-color: transparent;
 						width: 4em;
+            height: 5em;
 						text-indent: 4em;
 						font-size: 1em;
 						overflow: hidden;
@@ -325,12 +327,12 @@ body {
 		position: fixed;
 		top: 0;
 		right: 0;
-		width: 22em;
+		width: 20em;
 		max-width: 80%;
 		height: 100%;
 		-webkit-overflow-scrolling: touch;
-		background: #585858;
-		color: #ffffff;
+		background: #d102f5;
+		color: #fdf6f6;
 		cursor: default;
 		visibility: hidden;
 		z-index: 10002;
@@ -521,7 +523,7 @@ body {
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
+		margin-bottom: 1;
 		background-color: #712e95;
 	}
 
