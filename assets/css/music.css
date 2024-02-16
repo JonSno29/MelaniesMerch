@@ -3167,7 +3167,7 @@ input, select, textarea {
 		padding: 0em 0 6em 0 ;
 	}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 400px) {
 
 			#main {
 				padding: 0em 0 4em 0 ;
@@ -3238,7 +3238,7 @@ input, select, textarea {
 						margin-left: 0;
 					}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 450px) {
 
 			#footer {
 				padding: 5em 0 3em 0 ;
@@ -3256,7 +3256,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 450px) {
 
 			#footer > .inner section:nth-child(1) {
 				width: 66%;
@@ -3270,7 +3270,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 450px) {
 
 			#footer {
 				padding: 3em 0 1em 0 ;
@@ -3333,10 +3333,23 @@ input, select, textarea {
 		padding: 0 2.5em;
 	}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 450px) {
 
 			#wrapper > * > .inner {
 				padding: 0 1.25em;
 			}
 
 		}
+        @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
