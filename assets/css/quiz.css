@@ -40,7 +40,7 @@
 
 .start h1 {
   color: #4ab9f5;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-shadow: 0.75px 0.75px rgb(246, 244, 244);
 }
 
@@ -103,7 +103,7 @@
 
 #check-answer-correct {
   color: #db8df6;
-  font-size: 2.65rem;
+  font-size: 3.65rem;
   text-shadow: 0.75px 0.75px rgb(177, 94, 94);
   font-weight: bolder;
 }
@@ -117,7 +117,7 @@
 }
 #input-score h1 {
   color: #ace4f7;
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   text-shadow: 0.75px 0.75px rgb(176, 94, 94);
 }
 #input-score h2 {
@@ -246,7 +246,7 @@ body {
 					#header nav ul li a[href="#menu"] {
 						-webkit-tap-highlight-color: transparent;
 						width: 4em;
-            height: 5em;
+                        height: 5em;
 						text-indent: 4em;
 						font-size: 1em;
 						overflow: hidden;
