@@ -2007,7 +2007,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 780px) {
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -2122,7 +2122,7 @@ input, select, textarea {
 					width: calc(25% - 0.375em);
 				}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 780px) {
 
 			form > .fields {
 				width: calc(100% + 3em);

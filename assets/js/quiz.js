@@ -280,7 +280,7 @@ function answerSelection(event) {
       checkAnswerCorrect.textContent = "CORRECT!";
     } else {
       timeLeft -= 10;
-      checkAnswerIncorrect.textContent = "Incorrect :(";
+      checkAnswerIncorrect.textContent = "Incorrect";
     }
     score = timeLeft;
     i++;
